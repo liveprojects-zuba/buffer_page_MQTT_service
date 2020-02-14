@@ -1,0 +1,26 @@
+/* Empty. Add your own CSS if you like */
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+  background-color: #272632 !important;
+}
+body {
+  margin-bottom: 60px; /* Margin bottom by footer height */
+}
+.footer {
+  position: absolute;
+  bottom: 0; /*Using position absolute, forces footer stay at the bottom of the page */
+  width: 100%; /*set's the footer width to 100% of the page's width*/
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+li {
+   cursor: pointer; /*This indicates a link. Typically using the image of a pointing hand. */
+}
