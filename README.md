@@ -1,32 +1,5 @@
-# little_list
-A simple starter AngularJS single page web-app which displays a list of canned events, and navigates to a detail view for one of them
-
-## Quick Start
-
-- Open the 'little_list' project with Visual Studio Code
-
-- Open the terminal using the following commands
-
-  ```
-  CTRL + Shift + `(backtick)
-  ```
-
-- Once that's done copy and paste this line of code
-
-  ```
-  sudo npm install -g http-server
-  ```
-
-  This will prompt you for your machines admin password, enter your password to complete the process; giving you a similar output as below.
-
- [![terminal-output.png](https://i.postimg.cc/L8TsBdZs/terminal-output.png)](https://postimg.cc/DSSFnM6V)
-
-- Finally enter this final line of code to get your the single page web-app up and running!
-
-- ```
-  http-server -a localhost -p 8000
-  ```
-
+# brookerdetails_MQTT
+A simple starter AngularJS single page web-app which allows us to connect to our MQTT database and then control our cars on the tracks based off this so that we may be able to use the cars over a SPWA. For more details please see https://github.com/aliceliveprojects/little_list_SPWA
 
 ### Notes
 
