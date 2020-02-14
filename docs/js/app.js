@@ -6,20 +6,20 @@
     'ui.router',// ADDED for page navigation
     'momentjs', // ADDED used for dates
     'eventsjs',  // ADDED our events module
-    'mainjs'// ADDED for our states module
+    'eventUpdateState',// ADDED our update page(state)
+    'eventsListState', // ADDED our list page(state)
+    'eventsDetailState', // ADDED our detail page(state)
+    'welcomePageState', //ADDED our welcome page(state)
+    'app' //ADDED our car control page (state)
   ])
-
-    .config(function ($urlRouterProvider){
-      $urlRouterProvider.otherwise('/events_list');
-    })
 
     .run(function ($state, $rootScope) {
       $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams) {
         console.log('$stateChangeStart to ' + toState.to + '- fired when the transition begins. toState,toParams : \n', toState, toParams);
-        
+
         event.preventDefault();
 
-        $state.get('events_list').error = { code: 123, descriptions: 'Exception stack trace' }
+        //$state.get('welcome_page').error = { code: 123, descriptions: 'Exception stack trace' }
         return $state.go('events_list');
       });
 

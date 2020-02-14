@@ -1,0 +1,11 @@
+<ui-view>
+    <span ng-bind="carControlView.throttle" ng-show="!carControlView.throttleError"></span>
+    <span ng-show="carControlView.throttleError">Error</span>
+        <div>
+            <input type="range" min="0" max="100" value="0" orient="vertical" class="throttle" ng-model="carControlView.throttle">
+            <input type="button" value="Stop" ng-click="carControlView.stop()"></input>
+        </div>
+    <span ng-bind="carControlView.actualThrottle"></span>
+    <button ng-repeat="resource in carControlView.resources track by $index" ng-model="carControlView.resources[$index]" ng-click="carControlView.fireSpecialWeapon(resource.id)">{{resource.name}}</button>
+    <select ng-model="carControlView.targetChannel" ng-options="c for c in carControlView.targetChannels" required></select>
+</ui-view>
