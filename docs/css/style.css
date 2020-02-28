@@ -49,37 +49,15 @@ body{
     margin: 0;
 }
 
-/*input{ 
-    margin: auto !important;
-    -webkit-appearance: slider-vertical !important;
-    position: relative !important;
-    overflow: hidden !important;
-    height: 50vh !important;
-    width: 5vh !important;
-    cursor: pointer !important;
-    border-radius: 50px !important;
-}
-
-::-webkit-slider-runnable-track {
-    height: 80% !important;
-    width: 10vh !important;
-    background: #ddd !important;
-}
-
-::-webkit-slider-thumb {
-    -webkit-appearance: none !important;
-    width: 10vh !important;
-    height: 60px !important;
-    background: #ddd !important;
-    box-shadow: 0 68vh 0 68vh dodgerblue !important;
-    border: 2px solid #999 !important;
-}
-*/
 footer{
     height: 20vh;
     width: 100vw;
 }
 
+
+/*Will use this to target specific states of the dic body as we will need them adjusted accordingly for different things
+* Can find this element affecting style on the: welcome.page.html
+*/
 div[name="welcome_page_body"] {
   height: 30vh;
 }
@@ -115,6 +93,7 @@ form[name="setup_form"] {
   height: 20vh;
   text-align: center;
   color: #ffffff;
+  outline: none;
 }
 
 
@@ -135,4 +114,30 @@ input[type="submit"]{
     font-size: 1.2em;
     font-weight: bold;
     outline: none;
+}
+
+input[type="range"]{ 
+    margin: auto !important;
+    -webkit-appearance: slider-vertical !important;
+    position: relative !important;
+    overflow: hidden !important;
+    height: 50vh !important;
+    width: 5vh !important;
+    cursor: pointer !important;
+    border-radius: 50px !important;
+}
+
+::-webkit-slider-runnable-track {
+    height: 80% !important;
+    width: 10vh !important;
+    background: #ddd !important;
+}
+
+::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 10vh !important;
+    height: 60px !important;
+    background: #ddd !important;
+    box-shadow: 0 68vh 0 68vh dodgerblue !important;
+    border: 2px solid #999 !important;
 }
