@@ -145,6 +145,8 @@
                     set: newThrottle
                 }
                 mqttService.publish(throttleTopic, JSON.stringify(payload));
+
+                console.log(newThrottle);
             }
         })
 

@@ -116,6 +116,9 @@ input[type="submit"]{
     outline: none;
 }
 
+/* The next three areas are for the slider that we are going to be controlling via MQTT in our application
+* Can find the elements affected by this style on: carControlView.html
+*/
 input[type="range"]{ 
     margin: auto !important;
     -webkit-appearance: slider-vertical !important;
