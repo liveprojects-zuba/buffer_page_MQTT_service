@@ -77,7 +77,7 @@ body{
 }
 */
 footer{
-    height: 25vh;
+    height: 20vh;
     width: 100vw;
 }
 
@@ -86,8 +86,10 @@ div[name="welcome_page_body"] {
 }
 
 form[name="setup_form"] {
-  height: 25vh;
+  height: 20vh;
   text-align: center;
+  background-color: #ffffff;
+  font-size: 2em;
 }
 
 
