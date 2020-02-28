@@ -5,6 +5,11 @@
     src: url(neuropolitical/neuropolitical.ttf);
 }
 
+@font-face{
+    font-family: "Monoglyceride";
+    src: url(monoglyceride/monogrg.ttf);
+}
+
 .footer {
   position: static;
   bottom: 0; /*Using position absolute, forces footer stay at the bottom of the page */
@@ -54,7 +59,7 @@ body{
     width: 5vh !important;
     cursor: pointer !important;
     border-radius: 50px !important;
-}*/
+}
 
 ::-webkit-slider-runnable-track {
     height: 80% !important;
@@ -70,7 +75,7 @@ body{
     box-shadow: 0 68vh 0 68vh dodgerblue !important;
     border: 2px solid #999 !important;
 }
-
+*/
 footer{
     height: 30vh;
     width: 100vw;
@@ -115,9 +120,15 @@ h2[name="header_text_h2"]{
 */
 input[type="submit"]{
     height: 5vh;
+    width: 50vw;
     align-content: center;
-    background: #ffffff;
-    border-color: #000000;
+    background: #000000;
+    border-color: #ffffff;
+    border-width: 2px;
     border-radius: 10px;
     align-content: center;
+    color: #ffffff;
+    font-family: "Monoglyceride", Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
 }
