@@ -1,17 +1,27 @@
 <uiview>
-    <div>
-        <div ng-class="{'d-none': vm.names.length !== 0 }"> <!--?????? what is this doing?-->
-            <h1 class="text-center">Welcome To Scalexric</h1>
+    <header >
+        <div name="welcome_page_header">
+            <div ng-class="{'d-none': vm.names.length !== 0 }">
+                <h1 class="text-center" name="header_text_h1">Welcome To Scalexric</h1>
+            </div>
         </div>
-    </div>
+    </header>
     
-    <div>
-        <h2 class="text">Welcome to scalextric!!!! We hope you enjoy the game developed by the student 'group' at MMU</h2>
+    <div name="welcome_page_body">
+        <h2 class="text" name="header_text_h2">Welcome to scalextric!!!! We hope you enjoy the game developed by the student 'group' at MMU</h2>
     </div>
 
     <footer class="footer">
+        <form name="setup_form" ng-submit="vm.go(setup_form.$valid)">
+            Track Selection <select ng-model="vm.channel" ng-options="c for c in vm.channels" required></select>
+            <input type="submit" value="Get Racing!!!" ng-disabled="steup_form.$invalid"></input>
+        </form>
+    </footer>
+
+    <!--this footer is the one used where we can put the buttons of the application. I am leaving the code there as we can re-use-->
+    <!--<footer class="footer">
         <button type="button" class="btn btn-primary btn-lg btn-block" style="border-radius: 0;" ng-click="vm.getStarted()">Get Started!</button>
     </footer>
-    </div>
+    </div>-->
 
 </uiview>

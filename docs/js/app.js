@@ -9,8 +9,8 @@
     'eventUpdateState',// ADDED our update page(state)
     'eventsListState', // ADDED our list page(state)
     'eventsDetailState', // ADDED our detail page(state)
-    'welcomePageState', //ADDED our welcome page(state)
-    'app' //ADDED our car control page (state)
+    'welcomePageState', //ADDED our welcome page(state) 
+    'carControlState' //ADDED our car control (state)
   ])
 
     .run(function ($state, $rootScope) {
@@ -20,8 +20,7 @@
         event.preventDefault();
 
         //$state.get('welcome_page').error = { code: 123, descriptions: 'Exception stack trace' }
-        return $state.go('events_list');
+        return $state.go('events_list');        
       });
-
-    })
+    }) 
 })();

@@ -1,5 +1,10 @@
 /* Sticky footer styles
 -------------------------------------------------- */
+@font-face{
+    font-family: "Neuropolitical";
+    src: url(neuropolitical/neuropolitical.ttf);
+}
+
 .footer {
   position: static;
   bottom: 0; /*Using position absolute, forces footer stay at the bottom of the page */
@@ -8,10 +13,21 @@
   /*margin: 10%; dont need this as the width is already set*/
 }
 
+header{
+    height: 40%;
+    margin: 0;
+    padding: 0;
+}
+
+div[name="welcome_page_header"]{
+    height: 100%;
+}
+
 ui-view{
     padding: 0 !important;
     margin: 0 !important;
-    width: 100%;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 body{
@@ -20,7 +36,7 @@ body{
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    background-color: #330033 !important;
+    background-color: rgba(51, 0, 51, 0.75) !important;
     height: 100vh !important;
 }
 
@@ -29,7 +45,7 @@ body{
     margin: 0;
 }
 
-input{ 
+/*input{ 
     margin: auto !important;
     -webkit-appearance: slider-vertical !important;
     position: relative !important;
@@ -38,7 +54,7 @@ input{
     width: 5vh !important;
     cursor: pointer !important;
     border-radius: 50px !important;
-}
+}*/
 
 ::-webkit-slider-runnable-track {
     height: 80% !important;
@@ -53,4 +69,53 @@ input{
     background: #ddd !important;
     box-shadow: 0 68vh 0 68vh dodgerblue !important;
     border: 2px solid #999 !important;
+}
+
+footer{
+    height: 30%;
+    width: 100%;
+}
+
+div[name="welcome_page_body"] {
+  height: 30%;
+}
+
+form[name="setup_form"] {
+  height: 100%;
+  text-align: center;
+}
+
+
+/*Can use this to make sure that the text is doing the correct thing
+* Can find this element affecting style on the: welcome.page.html
+*/
+h1[name="header_text_h1"]{
+    margin: 0 !important;
+    height: 100%;
+    font-family: "Neuropolitical", Arial, sans-serif;
+    text-align: center;
+    padding-top: 60%;
+}
+
+/*Can use this to make sure that the text is doing the correct thing
+* Can find this element affected by this style on the: welcome.page.html
+*/
+h2[name="header_text_h2"]{
+    margin: 0 !important;
+    font-family: "Neuropolitical", Arial, sans-serif;
+    text-align: center;
+    padding: 5%;
+}
+
+
+/*This is a style that is used to target the submission form that we have for the track selection
+* Can find this element affected by this style on: welcome.page.html
+*/
+input[type="submit"]{
+    height: 5vh;
+    align-content: center;
+    background: #ffffff;
+    border-color: #000000;
+    border-radius: 10px;
+    align-content: center;
 }
