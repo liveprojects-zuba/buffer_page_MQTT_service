@@ -84,12 +84,6 @@ div[name="welcome_page_body"] {
   height: 30vh;
 }
 
-form[name="setup_form"] {
-  height: 20vh;
-  text-align: center;
-  color: #ffffff;
-}
-
 
 /*Can use this to make sure that the text is doing the correct thing
 * Can find this element affecting style on the: welcome.page.html
@@ -114,6 +108,15 @@ h2[name="header_text_h2"]{
     color: #ffffff;
 }
 
+/*Can use this to target just the form area and to change elements just based off that
+* Can find this element affecting style on the: welcome.page.html
+*/
+form[name="setup_form"] {
+  height: 20vh;
+  text-align: center;
+  color: #ffffff;
+}
+
 
 /*This is a style that is used to target the submission form that we have for the track selection
 * Can find this element affected by this style on: welcome.page.html
@@ -131,4 +134,5 @@ input[type="submit"]{
     font-family: "Monoglyceride", Arial, sans-serif;
     font-size: 1.2em;
     font-weight: bold;
+    outline: none;
 }
