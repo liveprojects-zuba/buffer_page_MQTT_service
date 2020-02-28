@@ -25,7 +25,7 @@ header{
 }
 
 div[name="welcome_page_header"]{
-    height: 100vh;
+    height: 40vh;
 }
 
 ui-view{
@@ -77,7 +77,7 @@ body{
 }
 */
 footer{
-    height: 30vh;
+    height: 25vh;
     width: 100vw;
 }
 
@@ -86,7 +86,7 @@ div[name="welcome_page_body"] {
 }
 
 form[name="setup_form"] {
-  height: 100vh;
+  height: 25vh;
   text-align: center;
 }
 
@@ -96,7 +96,7 @@ form[name="setup_form"] {
 */
 h1[name="header_text_h1"]{
     margin: 0 !important;
-    height: 100vh;
+    height: 40vh;
     font-family: "Neuropolitical", Arial, sans-serif;
     text-align: center;
     padding-top: 30vh;
