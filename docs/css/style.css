@@ -95,6 +95,7 @@ h1[name="header_text_h1"]{
     font-family: "Neuropolitical", Arial, sans-serif;
     text-align: center;
     padding-top: 60%;
+    color: #ffffff;
 }
 
 /*Can use this to make sure that the text is doing the correct thing
@@ -105,6 +106,7 @@ h2[name="header_text_h2"]{
     font-family: "Neuropolitical", Arial, sans-serif;
     text-align: center;
     padding: 5%;
+    color: #ffffff;
 }
 
 
