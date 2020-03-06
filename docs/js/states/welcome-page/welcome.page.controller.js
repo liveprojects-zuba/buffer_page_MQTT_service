@@ -12,7 +12,7 @@
         'mqttService',
         'brokerDetails',
         'eventsSrvc'
-        ];
+    ];
     
     function control(
         $scope,
@@ -31,13 +31,15 @@
         }).map(Function.call, Number);;
         vm.channel = 0;
 
-
-        console.log(brokerDetails);
-
         vm.go = go;
         
         function go(valid) {
             if (!valid) {
+                alert("Invalid Details")
+            } else {
+                $state.go('buffer_page');
+            }
+            /*if (!valid) {
                 alert("Invalid Details")
             } else {
                 mqttService.initialize(brokerDetails.HOST, brokerDetails.PORT);
@@ -67,7 +69,7 @@
                     }
 
                 }, mqttOptions)
-            }
+            }*/
         }
         
         /*vm.onItemSelected = function(index){
